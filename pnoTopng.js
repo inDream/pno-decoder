@@ -14,10 +14,6 @@ process.argv.forEach(function (val, index, array) {
         if(o.length==1)o = "0"+o;
         n = map[o.charAt(0).toUpperCase()]+map[o.charAt(1).toUpperCase()];
         nData.writeUInt8(parseInt(n, 16), ii);
-        /*o = buf.readUInt8(ii).toString(16);
-        n = map[o.charAt(0).toUpperCase()]+(o.length>1?map[o.charAt(1).toUpperCase()]:"");
-        console.log(o, n, parseInt(n, 16));
-        nData.writeUInt8(parseInt(n, 16), ii);*/
       }
       var s = ((+new Date()-d)/1000);
       var k = (len/1024)/s;
